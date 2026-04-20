@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=82.0.1"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "life-demo"
+version = "0.1.0"
+description = "Small Game of Life demo for a Python good-practices tutorial"
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "BSD-3-Clause" }
+
+dependencies = []
+
+[project.optional-dependencies]
+
+[dependency-groups]
+
+test = [
+    "pytest",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["life_demo*"]
+
+[project.scripts]
+life-demo = "life_demo.main:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
