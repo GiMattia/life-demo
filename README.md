@@ -28,7 +28,7 @@ This repository is meant to be **developed**, not just executed once.
 Clone the repository, move into it, and sync the environment:
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/GiMattia/life-demo.git
 cd life-demo
 uv sync --group test
 ```
